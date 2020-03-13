@@ -1,0 +1,63 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Welcome to Glitch!</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's client-side javascript file -->
+    <script src="/client.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>
+        Simple Sololearn Survey
+      </h1>
+    </header>
+
+    <main>
+      <p class="bold">Oh hi Sololearner,</p>
+      
+      <p>Tell me your preference:</p>
+      
+      <form>
+        <input type="radio" id="Learn" name="dream" value="Learn Courses">
+        <label for="Learn">Learn Courses</label><br>
+        <input type="radio" id="play" name="dream" value="Play Challenges">
+        <label for="play">Play Challenges</label><br>
+        <input type="radio" id="code" name="dream" value="Code Playground">
+        <label for="code">Code Playground</label><br>
+        <input type="radio" id="discuss" name="dream" value="Q&A Discuss" checked>
+        <label for="discuss">Q&A Discuss</label><br>
+        <button type="submit" id="submit-dream">Submit Survey</button>
+      </form>
+      
+      <section class="dreams">
+        <ul id="dreams"></ul>
+        <button id="clear-dreams">
+          Clear Surveys
+        </button>
+      </section>
+      
+    </main>
+
+    <footer>
+      Made with <a href="https://glitch.com">Glitch</a>      
+    </footer>
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js"></script>
+
+  </body>
+</html>
